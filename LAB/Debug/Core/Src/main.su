@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-main.c:64:5:main	16	static
-main.c:199:6:SystemClock_Config	72	static
-main.c:235:13:MX_GPIO_Init	40	static
-main.c:300:6:Error_Handler	4	static,ignoring_inline_asm
-=======
 main.c:64:5:main	8	static
-main.c:113:6:SystemClock_Config	72	static
-main.c:149:13:MX_GPIO_Init	40	static
-main.c:214:6:Error_Handler	4	static,ignoring_inline_asm
->>>>>>> Ex2
+main.c:112:6:SystemClock_Config	72	static
+main.c:148:13:MX_GPIO_Init	40	static
+main.c:213:6:Error_Handler	4	static,ignoring_inline_asm
