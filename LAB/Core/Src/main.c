@@ -91,48 +91,154 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-	  while (1){
-		  void setNumberOnClock(int num){
-		  	switch (num){
-			case 1:
-			HAL_GPIO_WritePin ( LED_1_GPIO_Port , LED_1_Pin,RESET );
-			break;
-			case 2:
-			HAL_GPIO_WritePin ( LED_2_GPIO_Port , LED_2_Pin,RESET );
-			break;
-			case 3:
-			HAL_GPIO_WritePin	 ( LED_3_GPIO_Port , LED_3_Pin,RESET);
-			break;
-			case 4:
-			HAL_GPIO_WritePin ( LED_4_GPIO_Port , LED_4_Pin,RESET );
-			break;
-			case 5:
-			HAL_GPIO_WritePin ( LED_5_GPIO_Port , LED_5_Pin,RESET );
-			break;
-			case 6:
-			HAL_GPIO_WritePin	 ( LED_6_GPIO_Port , LED_6_Pin,RESET);
-			break;
-			case 7:
-			HAL_GPIO_WritePin ( LED_7_GPIO_Port , LED_7_Pin,RESET );
-			break;
-			case 8:
-			HAL_GPIO_WritePin	 ( LED_8_GPIO_Port , LED_8_Pin,RESET);
-			break;
-			case 9:
-			HAL_GPIO_WritePin ( LED_9_GPIO_Port , LED_9_Pin,RESET );
-			break;
-			case 10:
-			HAL_GPIO_WritePin ( LED_10_GPIO_Port , LED_10_Pin,RESET );
-			break;
-			case 11:
-			HAL_GPIO_WritePin	 ( LED_11_GPIO_Port , LED_11_Pin,RESET);
-			break;
-			case 12:
-			HAL_GPIO_WritePin ( LED_12_GPIO_Port , LED_12_Pin,RESET );
-			break;
-		  	}
-		  }
-	  }
+	  int second =1; int second2 = 1; int minute2 = 0;
+int minute =1 , hour = 1;
+while(1){
+	HAL_GPIO_WritePin ( LED_1_GPIO_Port , LED_1_Pin,RESET );
+	HAL_GPIO_WritePin ( LED_2_GPIO_Port , LED_2_Pin,RESET );
+	HAL_GPIO_WritePin ( LED_3_GPIO_Port , LED_3_Pin,RESET);
+	HAL_GPIO_WritePin ( LED_4_GPIO_Port , LED_4_Pin,RESET );
+	HAL_GPIO_WritePin ( LED_5_GPIO_Port , LED_5_Pin,RESET );
+	HAL_GPIO_WritePin ( LED_6_GPIO_Port , LED_6_Pin,RESET);
+	HAL_GPIO_WritePin ( LED_7_GPIO_Port , LED_7_Pin,RESET );
+	HAL_GPIO_WritePin	 ( LED_8_GPIO_Port , LED_8_Pin,RESET);
+	HAL_GPIO_WritePin ( LED_9_GPIO_Port , LED_9_Pin,RESET );
+	HAL_GPIO_WritePin ( LED_10_GPIO_Port , LED_10_Pin,RESET );
+	HAL_GPIO_WritePin	 ( LED_11_GPIO_Port , LED_11_Pin,RESET);
+	HAL_GPIO_WritePin ( LED_12_GPIO_Port , LED_12_Pin,RESET );
+	switch (second){
+	case 1:
+	HAL_GPIO_WritePin ( LED_1_GPIO_Port , LED_1_Pin,SET );
+	break;
+	case 2:
+	HAL_GPIO_WritePin ( LED_2_GPIO_Port , LED_2_Pin,SET );
+	break;
+	case 3:
+	HAL_GPIO_WritePin	 ( LED_3_GPIO_Port , LED_3_Pin,SET);
+	break;
+	case 4:
+	HAL_GPIO_WritePin ( LED_4_GPIO_Port , LED_4_Pin,SET );
+	break;
+	case 5:
+	HAL_GPIO_WritePin ( LED_5_GPIO_Port , LED_5_Pin,SET );
+	break;
+	case 6:
+	HAL_GPIO_WritePin	 ( LED_6_GPIO_Port , LED_6_Pin,SET);
+	break;
+	case 7:
+	HAL_GPIO_WritePin ( LED_7_GPIO_Port , LED_7_Pin,SET );
+	break;
+	case 8:
+	HAL_GPIO_WritePin	 ( LED_8_GPIO_Port , LED_8_Pin,SET);
+	break;
+	case 9:
+	HAL_GPIO_WritePin ( LED_9_GPIO_Port , LED_9_Pin,SET );
+	break;
+	case 10:
+	HAL_GPIO_WritePin ( LED_10_GPIO_Port , LED_10_Pin,SET );
+	break;
+	case 11:
+	HAL_GPIO_WritePin	 ( LED_11_GPIO_Port , LED_11_Pin,SET);
+	break;
+	case 12:
+	HAL_GPIO_WritePin ( LED_12_GPIO_Port , LED_12_Pin,SET );
+	}
+	switch (minute){
+		case 1:
+	HAL_GPIO_WritePin ( LED_1_GPIO_Port , LED_1_Pin,SET );
+	break;
+	case 2:
+	HAL_GPIO_WritePin ( LED_2_GPIO_Port , LED_2_Pin,SET );
+	break;
+	case 3:
+	HAL_GPIO_WritePin	 ( LED_3_GPIO_Port , LED_3_Pin,SET);
+	break;
+	case 4:
+	HAL_GPIO_WritePin ( LED_4_GPIO_Port , LED_4_Pin,SET );
+	break;
+	case 5:
+	HAL_GPIO_WritePin ( LED_5_GPIO_Port , LED_5_Pin,SET );
+	break;
+	case 6:
+	HAL_GPIO_WritePin	 ( LED_6_GPIO_Port , LED_6_Pin,SET);
+	break;
+	case 7:
+	HAL_GPIO_WritePin ( LED_7_GPIO_Port , LED_7_Pin,SET );
+	break;
+	case 8:
+	HAL_GPIO_WritePin	 ( LED_8_GPIO_Port , LED_8_Pin,SET);
+	break;
+	case 9:
+	HAL_GPIO_WritePin ( LED_9_GPIO_Port , LED_9_Pin,SET );
+	break;
+	case 10:
+	HAL_GPIO_WritePin ( LED_10_GPIO_Port , LED_10_Pin,SET );
+	break;
+	case 11:
+	HAL_GPIO_WritePin	 ( LED_11_GPIO_Port , LED_11_Pin,SET);
+	break;
+	case 12:
+	HAL_GPIO_WritePin ( LED_12_GPIO_Port , LED_12_Pin,SET );
+	}
+	switch (hour){
+		case 1:
+	HAL_GPIO_WritePin ( LED_1_GPIO_Port , LED_1_Pin,SET );
+	break;
+	case 2:
+	HAL_GPIO_WritePin ( LED_2_GPIO_Port , LED_2_Pin,SET );
+	break;
+	case 3:
+	HAL_GPIO_WritePin	 ( LED_3_GPIO_Port , LED_3_Pin,SET);
+	break;
+	case 4:
+	HAL_GPIO_WritePin ( LED_4_GPIO_Port , LED_4_Pin,SET );
+	break;
+	case 5:
+	HAL_GPIO_WritePin ( LED_5_GPIO_Port , LED_5_Pin,SET );
+	break;
+	case 6:
+	HAL_GPIO_WritePin	 ( LED_6_GPIO_Port , LED_6_Pin,SET);
+	break;
+	case 7:
+	HAL_GPIO_WritePin ( LED_7_GPIO_Port , LED_7_Pin,SET );
+	break;
+	case 8:
+	HAL_GPIO_WritePin	 ( LED_8_GPIO_Port , LED_8_Pin,SET);
+	break;
+	case 9:
+	HAL_GPIO_WritePin ( LED_9_GPIO_Port , LED_9_Pin,SET );
+	break;
+	case 10:
+	HAL_GPIO_WritePin ( LED_10_GPIO_Port , LED_10_Pin,SET );
+	break;
+	case 11:
+	HAL_GPIO_WritePin	 ( LED_11_GPIO_Port , LED_11_Pin,SET);
+	break;
+	case 12:
+	HAL_GPIO_WritePin ( LED_12_GPIO_Port , LED_12_Pin,SET );
+	}
+	second++;
+	second2++;
+	if (second >= 13){
+	second = 1;
+	}
+	if (second2 >= 61){
+	second2 =1;
+	minute++;
+	minute2++;
+	}
+	if (minute >= 13){
+	minute =1;
+	}
+	if (minute2 >= 61){
+	minute2 =1;
+	hour++;
+	}
+	if (hour >= 13){
+	hour = 1;
+	}
+	HAL_Delay(2000);
+}
 }
 
 /**
